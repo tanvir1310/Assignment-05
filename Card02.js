@@ -23,5 +23,7 @@ document.getElementById('donation-button-02').addEventListener('click', function
   
   const newCurrentBalance = donationTotalCurrentBalance - donationInput02;
   document.getElementById('donation-total-current-balance').innerText = newCurrentBalance;
+
+  
   
   });

@@ -18,13 +18,29 @@ if (isNaN(donationInput) || donationInput <= 0) {
   return;
 }
 
+
 const updateDonationMoney =  donationMoney  +  donationInput ;
 document.getElementById('donation-money').innerText = updateDonationMoney;
 
 const newCurrentBalance = donationTotalCurrentBalance - donationInput;
 document.getElementById('donation-total-current-balance').innerText = newCurrentBalance;
 
+    // add transaction history
+    const card01Location = document.getElementById('card-01-Location')
+    const div = document.createElement('div');
+    div.innerHTML = `
+    
+    <div class="text-block">${updateDonationMoney} Taka is ${card01Location}</div>
+
+    
+    `
+    document.getElementById('history').appendChild(div);
+
 });
+
+
+
+
 
 
 

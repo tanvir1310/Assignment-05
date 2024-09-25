@@ -4,250 +4,240 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Assignment 05</title>
+
+  <!-- Linking external stylesheets and fonts -->
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
-
-<link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
-<script src="https://cdn.tailwindcss.com"></script>
-
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="lexend" >
+
+<body class="lexend">
+  <!-- Main Section -->
   <section class="main">
+    <!-- Navigation and Balance Section -->
     <div class="div-block-15">
       <div class="nav-container">
         <div class="div-block-5">
+          <!-- Blog Button -->
           <div class="div-block">
             <a href="#" class="blog-btn">Blog</a>
           </div>
+          
+          <!-- Logo Section -->
           <a href="#" class="div-block-3 w-inline-block">
-            <div class="div-block-2"><img src="assets/logo.png"></div>
+            <div class="div-block-2">
+              <img src="assets/logo.png" alt="Logo">
+            </div>
             <div class="text-block">Donate Bangladesh</div>
           </a>
+          
+          <!-- Current Balance Display -->
           <div class="div-block-4">
-            <div><img src="assets/coin.png"></div>
             <div>
-              <div class="text-block-2"><span id="donation-total-current-balance">5500</span> BDT</div>
+              <img src="assets/coin.png" alt="Coin">
+            </div>
+            <div>
+              <div class="text-block-2">
+                <span id="donation-total-current-balance">5500</span> BDT
+              </div>
             </div>
           </div>
         </div>
       </div>
+
+      <!-- Navigation Buttons (Donation and History) -->
       <div class="btn-card">
         <div class="nav-btn">
-          <a href="#" class="donationbtn">Donation</a>
-          <a href="#" class="history">History</a>
+          
+          <button id="donation-btn" class="donationBtn">Donation</button>
+          <button id="history-btn" class="donationBtn">History</button>
+        
         </div>
       </div>
     </div>
-    <div class="blog-card">
-          <div class="blog-card-container">
 
-                    <div class="div-block-6">
-                      <div class="div-block-7"><img src="assets/noakhali.png" loading="lazy" sizes="(max-width: 479px) 100vw, (max-width: 767px) 38vw, (max-width: 1279px) 41vw, 521px" srcset="assets/noakhali.png 500w, assets/noakhali.png 522w" alt="" class="image"></div>
-                      <div class="div-block-7">
-                        <div class="div-block-9">
-                          <div class="card-money">
-                            <div class="div-block-8"><img src="assets/coin.png"></div>
-                            <div class="div-block-11">
-                              <div class="text-block-3"><span id="donation-money">0</span> BDT</div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="div-block-10">
-                          <div class="text-block-4">Donate for Flood at Noakhali, Bangladesh</div>
-                        </div>
-                        <div class="div-block-12">
-                          <div class="text-block-5">The recent floods in Noakhali have caused significant damage to homes infrastructure. Your donation will help provide essential supplies and to those affected by this disaster. Every contribution, big or small, makes difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</div>
-                        </div>
-                        <div class="div-block-14">
-                          <div class="form-block w-form">
-                            <form >
-                              <input id="donation-input" type="text" autocomplete="off" placeholder="Write Donation Amount" class="input input-bordered w-full max-w-xxs" required/>
-
-                              <div class="div-block-13">               
-                                <!-- <a href="#" class="submit-button w-button">Donation Now</a> -->
-                                <button class="submit-button w-button" id="donation-button" class="btn" onclick="my_modal_5.showModal()">Donation Now</button>
-                              </div>
-                            </form>
-                          </div>
-                        </div>
-                      </div>
-
-
-
-                      <!-- modal -->
-                      <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
-                        <div class="modal-box flex-col bg-white">
-                          <div class="div-block flex-col gap-y-2">
-                            <div>
-                              <div class="text-block text-5xl">Congrats!</div>
-                            </div>
-                            <div class="div-block-2 gap-y-2"><img src="assets/coin.png" loading="lazy" alt="" class="image"></div>
-                            <div>
-                              <div class="text-block-2">You have donate for Humankind</div>
-                            </div>
-                            <div class="div-block-3">
-                              <div class="text-block-3">Successful</div>
-                            </div>
-                            <div>
-                              
-                              <div class="modal-action">
-                                <form method="dialog">
-                                  <!-- if there is a button in form, it will close the modal -->
-                                  <button class="btn">Close</button>
-                                </form>
-                              </div>
-                            </div>
-                          </div>
-                    
-                        </div>
-                      </dialog>
-
-
-                    </div>
-
-
-                    <div class="div-block-6">
-                      <div class="div-block-7"><img src="assets/noakhali.png" loading="lazy" sizes="(max-width: 479px) 100vw, (max-width: 767px) 38vw, (max-width: 1279px) 41vw, 521px" srcset="assets/noakhali.png 500w, assets/noakhali.png 522w" alt="" class="image"></div>
-                      <div class="div-block-7">
-                        <div class="div-block-9">
-                          <div class="card-money">
-                            <div class="div-block-8"><img src="assets/coin.png"></div>
-                            <div class="div-block-11">
-                              <div class="text-block-3"><span id="donation-money-02">0</span> BDT</div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="div-block-10">
-                          <div class="text-block-4">Donate for Flood at Noakhali, Bangladesh</div>
-                        </div>
-                        <div class="div-block-12">
-                          <div class="text-block-5">The recent floods in Noakhali have caused significant damage to homes infrastructure. Your donation will help provide essential supplies and to those affected by this disaster. Every contribution, big or small, makes difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</div>
-                        </div>
-                        <div class="div-block-14">
-                          <div class="form-block w-form">
-                            <form >
-                              <input id="donation-input-02" type="text" autocomplete="off" placeholder="Write Donation Amount" class="input input-bordered w-full max-w-xxs" required/>
-
-                              <div class="div-block-13">               
-                                <!-- <a href="#" class="submit-button w-button">Donation Now</a> -->
-                                <button class="submit-button w-button" id="donation-button-02" class="btn" onclick="my_modal_5.showModal()">Donation Now</button>
-                              </div>
-                            </form>
-                          </div>
-                        </div>
-                      </div>
-
-
-
-                      <!-- modal -->
-                      <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
-                        <div class="modal-box flex-col bg-white">
-                          <div class="div-block flex-col gap-y-2">
-                            <div>
-                              <div class="text-block text-5xl">Congrats!</div>
-                            </div>
-                            <div class="div-block-2 gap-y-2"><img src="assets/coin.png" loading="lazy" alt="" class="image"></div>
-                            <div>
-                              <div class="text-block-2">You have donate for Humankind</div>
-                            </div>
-                            <div class="div-block-3">
-                              <div class="text-block-3">Successful</div>
-                            </div>
-                            <div>
-                              
-                              <div class="modal-action">
-                                <form method="dialog">
-                                  <!-- if there is a button in form, it will close the modal -->
-                                  <button class="btn">Close</button>
-                                </form>
-                              </div>
-                            </div>
-                          </div>
-                    
-                        </div>
-                      </dialog>
-
-
-                    </div>
-
-
-                    <div class="div-block-6">
-                      <div class="div-block-7"><img src="assets/noakhali.png" loading="lazy" sizes="(max-width: 479px) 100vw, (max-width: 767px) 38vw, (max-width: 1279px) 41vw, 521px" srcset="assets/noakhali.png 500w, assets/noakhali.png 522w" alt="" class="image"></div>
-                      <div class="div-block-7">
-                        <div class="div-block-9">
-                          <div class="card-money">
-                            <div class="div-block-8"><img src="assets/coin.png"></div>
-                            <div class="div-block-11">
-                              <div class="text-block-3"><span id="donation-money-03">0</span> BDT</div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="div-block-10">
-                          <div class="text-block-4">Donate for Flood at Noakhali, Bangladesh</div>
-                        </div>
-                        <div class="div-block-12">
-                          <div class="text-block-5">The recent floods in Noakhali have caused significant damage to homes infrastructure. Your donation will help provide essential supplies and to those affected by this disaster. Every contribution, big or small, makes difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</div>
-                        </div>
-                        <div class="div-block-14">
-                          <div class="form-block w-form">
-                            <form >
-                              <input id="donation-input-03" type="text" autocomplete="off" placeholder="Write Donation Amount" class="input input-bordered w-full max-w-xxs" required/>
-
-                              <div class="div-block-13">               
-                                <!-- <a href="#" class="submit-button w-button">Donation Now</a> -->
-                                <button class="submit-button w-button" id="donation-button-03" class="btn" onclick="my_modal_5.showModal()">Donation Now</button>
-                              </div>
-                            </form>
-                          </div>
-                        </div>
-                      </div>
-
-
-
-                      <!-- modal -->
-                      <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
-                        <div class="modal-box flex-col bg-white">
-                          <div class="div-block flex-col gap-y-2">
-                            <div>
-                              <div class="text-block text-5xl">Congrats!</div>
-                            </div>
-                            <div class="div-block-2 gap-y-2"><img src="assets/coin.png" loading="lazy" alt="" class="image"></div>
-                            <div>
-                              <div class="text-block-2">You have donate for Humankind</div>
-                            </div>
-                            <div class="div-block-3">
-                              <div class="text-block-3">Successful</div>
-                            </div>
-                            <div>
-                              
-                              <div class="modal-action">
-                                <form method="dialog">
-                                  <!-- if there is a button in form, it will close the modal -->
-                                  <button class="btn">Close</button>
-                                </form>
-                              </div>
-                            </div>
-                          </div>
-                    
-                        </div>
-                      </dialog>
-
-
-                    </div>
-
-                    
-
+    <!-- Blog Card Section -->
+    <div id="card" class="blog-card ">
+      <div class="blog-card-container">
+        <!-- Blog Card 1 -->
+        <div class="div-block-6">
+          <div class="div-block-7">
+            <!-- Image for the blog card -->
+            <img src="assets/noakhali.png" loading="lazy" sizes="(max-width: 479px) 100vw, (max-width: 767px) 38vw, (max-width: 1279px) 41vw, 521px" srcset="assets/noakhali.png 500w, assets/noakhali.png 522w" alt="" class="image">
           </div>
+
+          <div class="div-block-7">
+            <!-- Donation Amount Card -->
+            <div class="div-block-9">
+              <div class="card-money">
+                <div class="div-block-8">
+                  <img src="assets/coin.png" alt="Coin">
+                </div>
+                <div class="div-block-11">
+                  <div class="text-block-3">
+                    <span id="donation-money">0</span> BDT
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Donation Description and Form -->
+            <div class="div-block-10">
+              <div id="card-01-Location" class="text-block-4">Donate for Flood at Noakhali, Bangladesh</div>
+            </div>
+
+            <div class="div-block-12">
+              <div class="text-block-5">The recent floods in Noakhali have caused significant damage to homes and infrastructure. Your donation will help provide essential supplies to those affected by this disaster. Every contribution, big or small, makes a difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</div>
+            </div>
+
+            <!-- Donation Form -->
+            <div class="div-block-14">
+              <div class="form-block w-form">
+                <form>
+                  <!-- Donation input field -->
+                  <input id="donation-input" type="text" autocomplete="off" placeholder="Write Donation Amount" class="input input-bordered w-full max-w-xxs" required />
+
+                  <!-- Submit Button to Open Modal -->
+                  <div class="div-block-13">
+                    <button class="submit-button w-button btn" id="donation-button" preventDefault() onclick="my_modal_5.showModal()">Donation Now</button>
+                    <!-- Extra button to open modal for testing purposes -->
+                    
+                  </div>
+                </form>
+
+                <!-- Modal Structure for Confirmation -->
+                <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+                  <div class="modal-box flex-col bg-white">
+                    <div class="div-block flex-col gap-y-2">
+                      <!-- Modal content -->
+                      <div>
+                        <div class="text-block text-5xl">Congrats!</div>
+                      </div>
+                      <div class="div-block-2 gap-y-2">
+                        <img src="assets/coin.png" loading="lazy" alt="Coin" class="image">
+                      </div>
+                      <div>
+                        <div class="text-block-2">You have donated for Humankind</div>
+                      </div>
+                      <div class="div-block-3">
+                        <div class="text-block-3">Successful</div>
+                      </div>
+
+                      <!-- Modal Close Button -->
+                      <div class="modal-action">
+                        <form method="dialog">
+                          <button class="closeModal">Close</button>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </dialog>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Blog Card 2 (Same structure as Blog Card 1, with different ids) -->
+        <div class="div-block-6">
+          <!-- Similar structure to the first blog card -->
+          <div class="div-block-7">
+            <img src="assets/noakhali.png" loading="lazy" sizes="(max-width: 479px) 100vw, (max-width: 767px) 38vw, (max-width: 1279px) 41vw, 521px" srcset="assets/noakhali.png 500w, assets/noakhali.png 522w" alt="" class="image">
+          </div>
+
+          <div class="div-block-7">
+            <div class="div-block-9">
+              <div class="card-money">
+                <div class="div-block-8">
+                  <img src="assets/coin.png" alt="Coin">
+                </div>
+                <div class="div-block-11">
+                  <div class="text-block-3">
+                    <span id="donation-money-02">0</span> BDT
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="div-block-10">
+              <div id="card-02-Location" class="text-block-4">Donate for Flood at Noakhali, Bangladesh</div>
+            </div>
+
+            <div class="div-block-12">
+              <div class="text-block-5">The recent floods in Noakhali have caused significant damage to homes and infrastructure. Your donation will help provide essential supplies to those affected by this disaster. Every contribution, big or small, makes a difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</div>
+            </div>
+
+            <div class="div-block-14">
+              <div class="form-block w-form">
+                <form>
+                  <input id="donation-input-02" type="text" autocomplete="off" placeholder="Write Donation Amount" class="input input-bordered w-full max-w-xxs" required />
+                  <div class="div-block-13">
+                    <button class="submit-button w-button btn" id="donation-button-02" preventDefault() onclick="my_modal_5.showModal()">Donation Now</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Blog Card 3 (Similar to Blog Card 1) -->
+        <div class="div-block-6">
+          <!-- Similar structure to the first blog card -->
+          <div class="div-block-7">
+            <img src="assets/noakhali.png" loading="lazy" sizes="(max-width: 479px) 100vw, (max-width: 767px) 38vw, (max-width: 1279px) 41vw, 521px" srcset="assets/noakhali.png 500w, assets/noakhali.png 522w" alt="" class="image">
+          </div>
+
+          <div class="div-block-7">
+            <div class="div-block-9">
+              <div class="card-money">
+                <div class="div-block-8">
+                  <img src="assets/coin.png" alt="Coin">
+                </div>
+                <div class="div-block-11">
+                  <div class="text-block-3">
+                    <span id="donation-money-03">0</span> BDT
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="div-block-10">
+              <div id="card-03-Location" class="text-block-4">Donate for Flood at Noakhali, Bangladesh</div>
+            </div>
+
+            <div class="div-block-12">
+              <div class="text-block-5">The recent floods in Noakhali have caused significant damage to homes and infrastructure. Your donation will help provide essential supplies to those affected by this disaster. Every contribution, big or small, makes a difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</div>
+            </div>
+
+            <div class="div-block-14">
+              <div class="form-block w-form">
+                <form>
+                  <input id="donation-input-03" type="text" autocomplete="off" placeholder="Write Donation Amount" class="input input-bordered w-full max-w-xxs" required />
+                  <div class="div-block-13">
+                    <button class="submit-button w-button btn" id="donation-button-03" preventDefault() onclick="my_modal_5.showModal()">Donation Now</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- history Section -->
+    <div id="history" class="history-01 hidden">
+      <div class="history-02">
+        <div class="text-block"><span>96500</span> Taka is <span>Donated for famine-2024 at Feni, Bangladesh</span></div>
+        <div class="text-block-2">Date : Tue Sep 17 2024 08:39:11 GMT +0600 (Bangladesh Standard Time)</div>
+      </div>
     </div>
   </section>
-
-
   <script src="utilities.js"></script>
   <script src="card01.js"></script>
-  <script src="card02.js"></script>
-  <script src="card03.js"></script>
-
+  <script src="Card02.js"></script>
+  <script src="Card03.js"></script>
+  <script src="feature.js"></script>
 </body>
 </html>
