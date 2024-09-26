@@ -310,7 +310,8 @@
 .history-01 {
   justify-content: center;
   padding-top: 60px;
-  display: flex;
+  display: block;
+
 }
 
 .history-02 {

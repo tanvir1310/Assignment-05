@@ -24,6 +24,25 @@ document.getElementById('donation-button-02').addEventListener('click', function
   const newCurrentBalance = donationTotalCurrentBalance - donationInput02;
   document.getElementById('donation-total-current-balance').innerText = newCurrentBalance;
 
-  
+    // add transaction history
+    const cardLocation02 = document.getElementById('card-02-Location');
+    // console.log(cardLocation);
+    const p = document.createElement('p');
+    p.innerText = `
+    
+    ${donationInput02} Taka is ${cardLocation02.innerHTML} 
+    Date: ${new Date().toString()}
+    
+    `;
+    p.style.fontWeight = 'bold';  // Makes the text bold
+    p.style.color = 'black';
+    p.style.textAlign = 'center'; // Center text
+    p.style.border = '2px solid black'; // Black border
+    p.style.padding = '10px'; 
+    p.style.maxWidth = '1160px'; 
+    p.style.marginLeft = 'auto';
+    p.style.marginRight = 'auto';
+    p.style.marginBottom = '20px '; 
+    document.getElementById('history').appendChild(p);
   
   });

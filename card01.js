@@ -4,6 +4,7 @@ event.preventDefault();
 const donationInput = getInputFieldValueById('donation-input');
 const donationTotalCurrentBalance = getTextFieldValueById('donation-total-current-balance');
 const donationMoney = getTextFieldValueById('donation-money');
+const cardLocation = document.getElementById('card-Location');
 // console.log(donationInput, donationTotalCurrentBalance, donationMoney);
 
 
@@ -26,15 +27,27 @@ const newCurrentBalance = donationTotalCurrentBalance - donationInput;
 document.getElementById('donation-total-current-balance').innerText = newCurrentBalance;
 
     // add transaction history
-    const card01Location = document.getElementById('card-01-Location')
-    const div = document.createElement('div');
-    div.innerHTML = `
-    
-    <div class="text-block">${updateDonationMoney} Taka is ${card01Location}</div>
 
+    const cardLocation01 = document.getElementById('card-Location');
+    // console.log(cardLocation);
+    const p = document.createElement('p');
+    p.innerText = `
     
-    `
-    document.getElementById('history').appendChild(div);
+    ${donationInput} Taka is ${cardLocation01.innerHTML} 
+    Date: ${new Date().toString()}
+    
+    `;
+    p.style.fontWeight = 'bold';  // Makes the text bold
+    p.style.color = 'black';
+    p.style.textAlign = 'center'; // Center text
+    p.style.border = '2px solid black'; // Black border
+    p.style.padding = '10px'; 
+    p.style.maxWidth = '1160px'; 
+    p.style.marginLeft = 'auto';
+    p.style.marginRight = 'auto';
+    p.style.marginBottom = '20px '; 
+    document.getElementById('history').appendChild(p);
+
 
 });
 
